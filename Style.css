@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif; /* Unique Font */
+    background: linear-gradient(to right, #f0f8ff, #87ceeb);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* To prevent scrollbars when centering content */
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #4682b4;
+    color: white;
+    padding: 1rem 0;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #4682b4;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header nav a:hover {
+    background-color: #5a9bd6;
+  }
+  
+  #welcome-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+    display: block; /* Ensure it takes up full width */
+    width: 100%; /* Ensures the text is centered horizontally */
+    text-align: center; /* Centering the text horizontally */
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    min-height: 400px; /* Ensures enough height for centering */
+    position: relative;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .content-section {
+    animation: fadeIn 1s ease forwards;
+    width: 100%;
+  }
+  
+  .project-card {
+    background: #e6f7ff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  

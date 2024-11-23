@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddhesh Kulkarni - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 id="welcome-text" class="fade-in">Welcome to the Portfolio</h1>
+    <h2>-Siddhesh Kulkarni</h2>
+    <nav>
+      <a href="#" data-section="profile">Profile</a>
+      <a href="#" data-section="education">Education</a>
+      <a href="#" data-section="skills">Skills</a>
+      <a href="#" data-section="projects">Projects</a>
+      <a href="#" data-section="certificates">Certificates</a>
+      <a href="#" data-section="achievements">Achievements</a>
+      <a href="#" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile" class="content-section hidden">
+      <h2>Profile</h2>
+      <p>
+        Motivated and detail-oriented computer science student with a strong foundation in software development, algorithms, and problem-solving. Seeking an internship opportunity to apply my technical skills while contributing to a collaborative team.
+      </p>
+    </section>
+
+    <section id="education" class="content-section hidden">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Int. B.Tech Computer Science</strong><br>
+          MIT World Peace University, Pune, India (2022-Present)<br>
+          CGPA: 7.71 | Aug 2022 – May 2024
+        </li>
+        <li>
+          <strong>SPM English Medium School</strong><br>
+          Xth Pass Out: SSC Pattern<br>
+          Percentage: 76% (Distinction)
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="content-section hidden">
+      <h2>Skills</h2>
+      <ul>
+        <li>C, C++</li>
+        <li>Web Development (HTML, CSS, JS)</li>
+        <li>Java, Python, Machine Learning</li>
+        <li>Android Development</li>
+        <li>Excellent Communication</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="content-section hidden">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Customer Churn Prediction</h3>
+        <p>Using Machine Learning to predict customer retention patterns.</p>
+      </div>
+      <div class="project-card">
+        <h3>PROBE</h3>
+        <p>Proactive Real-time Observations of Water's Bio-Physical Environment.</p>
+      </div>
+    </section>
+
+    <section id="certificates" class="content-section hidden">
+      <h2>Certificates</h2>
+      <ul>
+        <li>C Course Bootcamp (Udemy)</li>
+        <li>National Academic Immersion Program (Shreenidhi Institute)</li>
+        <li>Android 15 Complete Course (Udemy)</li>
+      </ul>
+    </section>
+
+    <section id="achievements" class="content-section hidden">
+      <h2>Achievements</h2>
+      <p>Runner-up position in Hack MIT-WPU'24 Ideathon (PROBE project).</p>
+    </section>
+
+    <section id="contact" class="content-section hidden">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: siddheshkul@gmail.com</li>
+        <li>Phone: 7218448925</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/siddhesh-kulkarni-97b562236" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Siddhesh Kulkarni</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[data-section]').forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // Get the section to display
+        const sectionId = link.getAttribute('data-section');
+
+        // Hide all sections
+        document.querySelectorAll('.content-section').forEach(section => {
+          section.classList.add('hidden');
+          section.classList.remove('fadeIn');
+        });
+
+        // Fade out the welcome text
+        const welcomeText = document.getElementById('welcome-text');
+        welcomeText.classList.add('fadeOut');
+
+        // Show the section that was clicked
+        const section = document.getElementById(sectionId);
+        section.classList.remove('hidden');
+        section.classList.add('fadeIn');
+      });
+    });
+  </script>
+</body>
+</html>
