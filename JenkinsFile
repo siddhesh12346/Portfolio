@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    stages {
+        stage('1. Checkout Code') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('2. Build and Test') {
+            steps {
+                sh 'corepack enable pnpm && pnpm install'
+                sh 'pnpm run build'
+            }
+        }
+        stage('3. Docker Build') {
+            steps {
+                script {
+                    sh 'docker build -t your-dockerhub-username/portfolio:latest .'
+                }
+            }
+        }
+        stage('4. Push Image') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USER')]) {
+                    sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin'
+                    sh 'docker push your-dockerhub-username/portfolio:latest'
+                }
+            }
+        }
+        stage('5. Deploy to Minikube') {
+            steps {
+                sh 'kubectl apply -f k8s/'
+            }
+        }
+    }
+}
