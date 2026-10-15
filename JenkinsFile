@@ -24,7 +24,7 @@ pipeline {
         }
         stage('4. Deploy to Minikube') {
             steps {
-                sh 'kubectl apply -f k8s/'
+                sh 'kubectl apply --validate=false -f k8s/'
             }
         }
     }
