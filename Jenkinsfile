@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/siddhesh12346/student-incubation-pipeline.git'
+                git branch: 'main', url: 'https://github.com/siddhesh12346/Portfolio.git'
             }
         }
         stage('Build Docker Image') {
