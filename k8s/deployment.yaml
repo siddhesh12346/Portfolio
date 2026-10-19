@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: your-dockerhub-username/my-app:latest
-        imagePullPolicy: Always
+        image: siddheshk1234/portfolio:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
