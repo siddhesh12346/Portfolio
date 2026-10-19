@@ -6,7 +6,7 @@ import { profile } from '@/lib/portfolio-data'
 export function Contact() {
   const links = [
     { label: 'Email Messssssss', href: `mailto:${profile.email}`, icon: Mail, primary: true },
-    { label: 'LinkedIn', href: profile.linkedin, icon: LinkedinIcon },
+    { label: 'LinkedIns', href: profile.linkedin, icon: LinkedinIcon },
     { label: 'GitHub', href: profile.github, icon: GithubIcon },
   ]
 
