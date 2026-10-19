@@ -28,7 +28,7 @@ export default function Page() {
           <span>
             &copy; {new Date().getFullYear()} {profile.name}
           </span>
-          <span>Designed &amp; built with care.</span>
+          <span>Designed &amp; built with care cool.</span>
         </div>
       </footer>
     </>
