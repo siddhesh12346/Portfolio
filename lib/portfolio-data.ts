@@ -1,88 +1,88 @@
 /**
- * All portfolio content lives here so it is easy to edit later.
- * Update text, links, projects, and education below without touching components.
+ * Static data for the Cloud Infrastructure Monitoring Dashboard.
+ * UI demonstration only — no backend, APIs, or database required.
  */
 
 export const profile = {
-  name: 'Siddhesh Kulkarni',
-  roles: ['Computer Science Student', 'Developer', 'AI/ML Enthusiast'],
-  tagline:
-    'Building practical software, exploring AI/ML, and turning ideas into useful products.',
-  // Replace these placeholder links with your real ones.
-  email: 'Siddheshskul@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/siddhesh-kulkarni-97b562236/',
-  github: 'https://github.com/siddhesh12346',
+  name: 'CloudPulse',
+  roles: ['Infrastructure Monitoring', 'DevOps Dashboard'],
+  tagline: 'Monitor infrastructure. Track deployments. Stay operational.',
+  email: 'admin@cloudpulse.local',
+  linkedin: '#',
+  github: '#',
 }
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Achievements', href: '#achievements' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Overview', href: '#overview' },
+  { label: 'Infrastructure', href: '#infrastructure' },
+  { label: 'Deployments', href: '#deployments' },
+  { label: 'Monitoring', href: '#monitoring' },
+  { label: 'Activity Logs', href: '#activity' },
 ]
 
 export const about = {
-  heading: 'A little about me.',
+  heading: 'Infrastructure Overview',
   paragraphs: [
-    "I'm a Computer Science student who likes building things that people actually use. Most of my time goes into software development and exploring how AI and machine learning can solve real, everyday problems.",
-    "I care about the details — clean code, thoughtful interfaces, and products that feel simple even when the engineering behind them isn't. When I'm not building, I'm usually learning something new or figuring out how to make an idea work in practice.",
+    'CloudPulse provides a unified view of application infrastructure, resource utilization, container health, and deployment activity.',
+    'This dashboard displays representative monitoring data for a demonstration environment. All metrics and events are static sample values intended for UI presentation.',
   ],
   interests: [
-    'Artificial Intelligence & Machine Learning',
-    'Software Development',
-    'Mobile Application Development',
-    'Data & Analytics',
-    'Motorsport Technology',
-    'UI/UX & Design',
+    'Container Monitoring',
+    'Resource Utilization',
+    'Deployment Tracking',
+    'Application Health',
+    'Infrastructure Analytics',
+    'System Reliability',
   ],
 }
 
 export const experience = [
   {
-    company: 'Apastron Industries',
-    role: 'Software Development Intern',
-    period: '6 Months Internship',
+    company: 'Production Cluster',
+    role: 'Kubernetes Environment',
+    period: 'Demo Environment',
     description:
-      'Worked as a software development intern, building a mobile application using Flutter for the Ahilyanagar Municipal Corporation.',
-    technologies: ['Flutter', 'Dart', 'Mobile Development', 'Firebase'],
+      'A sample infrastructure environment containing application workloads, containerized services, and deployment resources.',
+    technologies: ['Docker', 'Kubernetes', 'Jenkins', 'Linux'],
   },
 ]
 
 export const achievements = [
   {
-    tag: 'Hackathons',
-    title: 'Competed in 4+ hackathons',
+    tag: 'Availability',
+    title: '99.95% Service Availability',
     description:
-      'Regularly build and ship projects under time pressure across multiple hackathons.',
+      'Illustrative availability metric for the selected monitoring period.',
   },
   {
-    tag: 'HackMIT',
-    title: 'Runner-up at HackMIT',
-    description: 'Achieved runner-up position at the HackMIT hackathon.',
-  },
-  {
-    tag: 'Hack-X',
-    title: 'Design Head — Hack-X',
+    tag: 'Deployments',
+    title: '128 Successful Deployments',
     description:
-      'Served as Design Head of Hack-X, a university-level technology and cybersecurity club.',
+      'Sample deployment count showing the activity of the release pipeline.',
   },
   {
-    tag: 'Ciphathon',
-    title: '24-Hour Hackathon Organizer',
+    tag: 'Infrastructure',
+    title: '12 Monitored Instances',
     description:
-      "Hosted and organized 24-hour hackathons including Ciphathon '26.",
+      'Representative count of monitored compute instances in the dashboard.',
   },
   {
-    tag: 'Research',
-    title: 'Published Research Paper',
+    tag: 'Containers',
+    title: '24 Running Containers',
     description:
-      'Published a research paper on a Customer Retention System through Nature/Springer.',
+      'Example container inventory across the demonstration environment.',
   },
   {
-    tag: 'German',
-    title: 'A1 German Course Completed',
-    description: 'Successfully completed an A1-level German language course.',
+    tag: 'Performance',
+    title: '42 ms Average Response',
+    description:
+      'Illustrative application response time for the monitoring overview.',
+  },
+  {
+    tag: 'Monitoring',
+    title: 'All Core Services Healthy',
+    description:
+      'A sample system-health status displayed for UI demonstration purposes.',
   },
 ]
 
@@ -96,74 +96,268 @@ export type Project = {
   Paperlink?: string
 }
 
-// Placeholder projects — replace titles, descriptions, tech, and links as you add real work.
 export const projects: Project[] = [
   {
-    category: 'AI / Machine Learning',
-    title: 'Customer Retention System',
+    category: 'Infrastructure',
+    title: 'Production Cluster',
     description:
-      'An AI-powered system that analyzes customer behavior and predicts potential churn, helping businesses identify at-risk customers and improve retention strategies.',
-    technologies: ['Python', 'Scikit-learn', 'Machine Learning'],
-    github: 'https://github.com/siddhesh12346/Customer-retention-system',
-    
+      'A demonstration Kubernetes cluster showing application workloads, service discovery, and container health.',
+    technologies: ['Kubernetes', 'Docker', 'Linux'],
   },
   {
-    category: 'Software Development',
-    title: 'Hostel Management System',
+    category: 'CI/CD',
+    title: 'Automated Release Pipeline',
     description:
-      'A DBMS project with HTML/CSS frontend, Node.js middleware, and C++ backend/OOP.',
-    technologies: ['JavaScript', 'React', 'Node.js'],
-    github: '#',
+      'A sample continuous integration and deployment workflow covering source updates, image builds, and application releases.',
+    technologies: ['Jenkins', 'GitHub', 'Docker Hub'],
   },
   {
-    category: 'Mobile Applications',
-    title: 'Ahilyanagar Municipal Corporation',
+    category: 'Monitoring',
+    title: 'Resource Utilization',
     description:
-      'Built a mobile application during your 6-month internship at Axionyx Industries.',
-    technologies: ['Flutter', 'Dart', 'Firebase'],
-    github: 'https://github.com/siddhesh12346/ahilyanagar-municipal-project',
-    
+      'A static overview of CPU utilization, memory consumption, response times, and infrastructure capacity.',
+    technologies: ['Metrics', 'Analytics', 'Visualization'],
   },
   {
-    category: 'Data & Analytics',
-    title: 'Nature Springer Research Paper',
+    category: 'Reliability',
+    title: 'Service Health Monitor',
     description:
-      'Customer Retention System research paper published in Nature/Springer, focusing on predictive analytics and customer behavior modeling.',
-    technologies: ['Python', 'Data Analysis'],
-    Paperlink: 'https://link.springer.com/chapter/10.1007/978-3-032-06688-6_23',
+      'A UI demonstration of service availability, health indicators, recent events, and operational status.',
+    technologies: ['Health Checks', 'Containers', 'Monitoring'],
   },
 ]
 
 export const skills = [
   {
-    group: 'Languages',
-    items: ['C++', 'Python', 'Java', 'JavaScript'],
+    group: 'Infrastructure',
+    items: ['Docker', 'Kubernetes', 'Linux', 'Container Management'],
   },
   {
-    group: 'Development',
-    items: ['Flutter', 'Dart', 'React', 'HTML', 'CSS', 'Node.js'],
+    group: 'CI/CD',
+    items: ['Jenkins', 'GitHub', 'Docker Hub', 'Build Pipelines'],
   },
   {
-    group: 'AI / Data',
-    items: ['Machine Learning', 'Data Analysis', 'Scikit-learn'],
+    group: 'Monitoring',
+    items: ['CPU Metrics', 'Memory Metrics', 'Service Health', 'Analytics'],
   },
   {
-    group: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Firebase'],
+    group: 'Networking',
+    items: ['Services', 'NodePort', 'HTTP', 'Reverse Proxy'],
   },
 ]
 
-// Minimal education placeholders — edit freely.
 export const education = [
   {
-
-    degree: 'SPM English School',
-    institution: '',
-    year: '2022',
+    degree: 'Infrastructure Dashboard',
+    institution: 'CloudPulse Demonstration Environment',
+    year: '2026',
   },
   {
-    degree: 'Int BTech in Computer Science',
-    institution: 'MIT World Peace University, Pune',
-    year: '2028',
+    degree: 'Application Deployment',
+    institution: 'Docker and Kubernetes',
+    year: '2026',
   },
+]
+
+/**
+ * Dashboard-specific static data.
+ * Components can import these arrays to render dashboard widgets.
+ */
+
+export const dashboardStats = [
+  {
+    label: 'Total Servers',
+    value: '12',
+    change: '+2 this month',
+    status: 'healthy',
+    icon: 'server',
+  },
+  {
+    label: 'Running Containers',
+    value: '24',
+    change: '2 stopped',
+    status: 'healthy',
+    icon: 'container',
+  },
+  {
+    label: 'CPU Utilization',
+    value: '42%',
+    change: '−5% from last hour',
+    status: 'normal',
+    icon: 'cpu',
+  },
+  {
+    label: 'Memory Usage',
+    value: '68%',
+    change: '+3% from last hour',
+    status: 'warning',
+    icon: 'memory',
+  },
+]
+
+export const infrastructure = [
+  {
+    id: 'SRV-001',
+    name: 'Web Server Alpha',
+    address: '10.0.1.11',
+    region: 'Mumbai, India',
+    type: 'Web Server',
+    cpu: 38,
+    memory: 62,
+    status: 'Healthy',
+    uptime: '24d 12h',
+  },
+  {
+    id: 'SRV-002',
+    name: 'API Server Beta',
+    address: '10.0.1.12',
+    region: 'Mumbai, India',
+    type: 'Application Server',
+    cpu: 67,
+    memory: 74,
+    status: 'Healthy',
+    uptime: '18d 06h',
+  },
+  {
+    id: 'SRV-003',
+    name: 'Worker Node Gamma',
+    address: '10.0.2.21',
+    region: 'Singapore',
+    type: 'Kubernetes Node',
+    cpu: 82,
+    memory: 86,
+    status: 'Warning',
+    uptime: '12d 19h',
+  },
+  {
+    id: 'SRV-004',
+    name: 'Database Node Delta',
+    address: '10.0.2.22',
+    region: 'Singapore',
+    type: 'Database Server',
+    cpu: 29,
+    memory: 51,
+    status: 'Healthy',
+    uptime: '31d 03h',
+  },
+  {
+    id: 'SRV-005',
+    name: 'Cache Server Epsilon',
+    address: '10.0.3.14',
+    region: 'Frankfurt',
+    type: 'Cache Server',
+    cpu: 0,
+    memory: 0,
+    status: 'Offline',
+    uptime: '—',
+  },
+]
+
+export const deployments = [
+  {
+    id: 'DEP-1048',
+    application: 'web-frontend',
+    version: 'v2.8.1',
+    environment: 'Production',
+    status: 'Successful',
+    author: 'deployment-bot',
+    time: '2 minutes ago',
+    duration: '1m 42s',
+  },
+  {
+    id: 'DEP-1047',
+    application: 'api-service',
+    version: 'v1.14.0',
+    environment: 'Production',
+    status: 'Successful',
+    author: 'release-manager',
+    time: '28 minutes ago',
+    duration: '2m 16s',
+  },
+  {
+    id: 'DEP-1046',
+    application: 'worker-service',
+    version: 'v3.2.4',
+    environment: 'Staging',
+    status: 'Failed',
+    author: 'deployment-bot',
+    time: '1 hour ago',
+    duration: '48s',
+  },
+  {
+    id: 'DEP-1045',
+    application: 'authentication',
+    version: 'v2.1.7',
+    environment: 'Production',
+    status: 'Successful',
+    author: 'release-manager',
+    time: '3 hours ago',
+    duration: '1m 54s',
+  },
+  {
+    id: 'DEP-1044',
+    application: 'web-frontend',
+    version: 'v2.8.0',
+    environment: 'Production',
+    status: 'Successful',
+    author: 'deployment-bot',
+    time: '5 hours ago',
+    duration: '1m 37s',
+  },
+]
+
+export const resourceUsage = [
+  { time: '09:00', cpu: 35, memory: 54 },
+  { time: '10:00', cpu: 42, memory: 58 },
+  { time: '11:00', cpu: 38, memory: 56 },
+  { time: '12:00', cpu: 51, memory: 61 },
+  { time: '13:00', cpu: 46, memory: 63 },
+  { time: '14:00', cpu: 57, memory: 66 },
+  { time: '15:00', cpu: 42, memory: 68 },
+]
+
+export const activityLogs = [
+  {
+    id: 1,
+    type: 'success',
+    title: 'Deployment completed',
+    description: 'web-frontend v2.8.1 deployed successfully.',
+    time: '2 minutes ago',
+  },
+  {
+    id: 2,
+    type: 'warning',
+    title: 'High memory utilization',
+    description: 'Worker Node Gamma reached 86% memory usage.',
+    time: '14 minutes ago',
+  },
+  {
+    id: 3,
+    type: 'info',
+    title: 'Build pipeline completed',
+    description: 'CI pipeline finished for api-service.',
+    time: '28 minutes ago',
+  },
+  {
+    id: 4,
+    type: 'error',
+    title: 'Deployment failed',
+    description: 'worker-service v3.2.4 failed in staging.',
+    time: '1 hour ago',
+  },
+  {
+    id: 5,
+    type: 'success',
+    title: 'Health check passed',
+    description: 'Database Node Delta responded successfully.',
+    time: '2 hours ago',
+  },
+]
+
+export const serviceHealth = [
+  { name: 'Web Frontend', status: 'Operational', latency: '42 ms', uptime: '99.98%' },
+  { name: 'API Gateway', status: 'Operational', latency: '68 ms', uptime: '99.95%' },
+  { name: 'Authentication', status: 'Operational', latency: '35 ms', uptime: '99.99%' },
+  { name: 'Worker Service', status: 'Degraded', latency: '186 ms', uptime: '98.72%' },
+  { name: 'Cache Service', status: 'Operational', latency: '12 ms', uptime: '99.97%' },
 ]
