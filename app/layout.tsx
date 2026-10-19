@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Siddhesh Kulkarni — Computer Science Student & Developer',
     description:
-      'Building practical software, exploring AI/ML, and turning ideas into useful products hmmmm.',
+      'Building practical software, exploring AI/ML, and turning ideas into useful products hmm??.',
     type: 'website',
   },
 }
