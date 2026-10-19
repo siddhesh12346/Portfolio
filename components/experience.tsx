@@ -5,7 +5,7 @@ import { experience } from '@/lib/portfolio-data'
 export function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-28 md:py-40">
-      <SectionHeading label="Experience" title="Where I've worked." />
+      <SectionHeading label="Experience" title="Where I've workedss." />
 
       <div className="relative">
         {/* timeline line */}
