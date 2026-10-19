@@ -4,7 +4,7 @@
  */
 
 export const profile = {
-  name: 'Siddhesh Suyog Kulkarni',
+  name: 'Siddhesh Suyog Kulkarnis',
   roles: ['Computer Science Student', 'Developer', 'AI/ML Enthusiast'],
   tagline:
     'Building practical software, exploring AI/ML, and turning ideas into useful products.',
