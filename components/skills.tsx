@@ -5,7 +5,7 @@ import { skills } from '@/lib/portfolio-data'
 export function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-28 md:py-40">
-      <SectionHeading label="Skills" title="Tools I build with." />
+      <SectionHeading label="Skills" title="Tools I build withssssss." />
 
       <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group, i) => (
