@@ -84,7 +84,7 @@ export function Projects() {
 
       <Reveal delay={120}>
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          More projects coming soon.
+          More projects coming soon adn tune in.
         </p>
       </Reveal>
     </section>
