@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Siddhesh Kulkarni — Computer Science Student & Developer adn some body',
+  title: 'Siddhesh Kulkarni — Computer Science Student & Developer',
   description:
-    'Portfolio of Siddhesh Kulkarni — Computer Science student, developer, and AI/ML enthusiast. Building practical software and turning ideas into useful products.',
+    'Portfolio of Siddhesh Kulkarni — Computer Science student, developer, and AI/ML enthusiast. Building practical software and turning ideas into useful products. But what next?',
   generator: 'v0.app',
   openGraph: {
     title: 'Siddhesh Kulkarni — Computer Science Student & Developer',
