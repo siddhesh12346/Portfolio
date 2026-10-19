@@ -8,7 +8,7 @@ import { projects } from '@/lib/portfolio-data'
 export function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-28 md:py-40">
-      <SectionHeading label="Projects" title="Selected work." />
+      <SectionHeading label="Projects" title="Selecteds work." />
 
       <div className="grid gap-4 md:grid-cols-2">
         {projects.map((project, i) => (
