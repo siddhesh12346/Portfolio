@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Siddhesh Kulkarni — Computer Science Student & Developer',
+  title: 'Siddhesh Kulkarni — Computer Science Student & Developer adn some body',
   description:
     'Portfolio of Siddhesh Kulkarni — Computer Science student, developer, and AI/ML enthusiast. Building practical software and turning ideas into useful products.',
   generator: 'v0.app',
